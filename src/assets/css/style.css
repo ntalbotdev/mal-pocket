@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&display=swap");
+* {
+  padding: unset;
+  margin: unset;
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  width: 550px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  text-align: center;
+  height: 120px;
+}
+.header__title {
+  padding: 0.5em 0;
+  color: #2e51a2;
+}
+.header__title .mini {
+  font-size: 0.5em;
+}
+.header .navbar__list {
+  display: flex;
+  background: #2e51a2;
+}
+.header .navbar__item {
+  list-style: none;
+  flex-basis: 100%;
+  height: 50px;
+}
+.header .navbar__link {
+  display: block;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.header .navbar__link:hover, .header .navbar__link--active {
+  background-color: #e1e7f5;
+  color: #000;
+}
+
+.main {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.main > * {
+  width: 100%;
+}
+.main .recent__content,
+.main .top-airing__content,
+.main .seasonal__content,
+.main .upcoming__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+  gap: 1em 0;
+}
+
+.card {
+  width: 160px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.card:hover {
+  opacity: 0.8;
+}
+.card__image_wrapper {
+  position: relative;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+}
+.card__image {
+  height: 100%;
+}
+.card__gradient_bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgb(0, 0, 0) 100%);
+  text-align: center;
+  color: #fff;
+}
+.card__title {
+  margin-top: 0.5em;
+  color: #000;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #2e51a2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95em;
+}
+.footer__text {
+  color: #fff;
+}
+.footer__heart {
+  color: rgb(219, 0, 0);
+}
+.footer__link {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+.footer__link:hover {
+  border: unset;
+}/*# sourceMappingURL=style.css.map */
