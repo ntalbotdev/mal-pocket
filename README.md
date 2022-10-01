@@ -1,4 +1,4 @@
-# MAL Þocket v1.0.0
+# MAL Pocket v1.0.0
 #### Chrome extension made with ReactJS and JikanAPI.
 
 ### Notifications for MyAnimeList. Scheduled today episodes, top airing animes, currently airing and upcoming ones.
